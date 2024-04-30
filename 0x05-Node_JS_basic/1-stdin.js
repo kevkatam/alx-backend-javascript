@@ -1,6 +1,5 @@
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
-process.stdin.setEncoding('utf8');
 
 if (process.stdin.isTTY) {
   process.stdin.on('data', (data) => {
