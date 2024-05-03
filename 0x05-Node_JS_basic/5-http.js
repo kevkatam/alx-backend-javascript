@@ -56,7 +56,7 @@ const app = server.createServer((req, res) => {
     res.end();
   }
   if (req.url === '/students') {
-    res.write('This is the list of our students');
+    res.write('This is the list of our students\n');
     countStudents(process.argv[2].toString()).then((result) => {
       const datta = result.slice(0, -1);
       res.end(datta);
