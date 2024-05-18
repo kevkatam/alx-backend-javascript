@@ -8,7 +8,7 @@ class StudentsController {
       const keys = Object.keys(students);
       keys.sort();
       keys.forEach((key) => {
-        page.push(`Number of students in ${key}: ${students[key]} 6. List: ${students[[key]].join(', ')}`);
+        page.push(`Number of students in ${key}: ${students[[key]].length} 6. List: ${students[[key]].join(', ')}`);
       });
       response.status(200).send(page.join('\n'));
     }).catch(() => {
